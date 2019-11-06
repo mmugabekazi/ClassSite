@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Media Resume</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <section id="personalbio">
+
+        <img src="image\me.jpg" alt="media" height="200" width="200">
+        <h1>Mediatrice Mugabekazi</h1>
+        <div class=" address">7209 S Christalee ct, West Jordan, Utah 84084. <br>
+            (801)-433-7301.mugabekazi2@gmail.com</div>
+
+        <p><a href="mediatrice.slccwebdev.com">My WebSite</a></p>
+    </section>
+    <nav>
+        <a href="/personalbio/">Personal Bio</a>/
+        <a href="/summary">Summary</a>/
+        <a href="#skills"> Skills</a>/
+        <a href="professional experience">Professional Experience</a>/
+        <a href="#Educations"> Educations </a>/
+        <a href="professional development">Professional Development</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class=" col-sm-6">
+                <background-color: black;>
+                    <h4>SKILLS</h4>
+                    <li>Photoshop</li>
+                    <li>Front-End languages: Javascript,CSS and HTML</li>
+                    <li>Microsoft Office (Word, Power Point and Excel, Oracle) </li>
+                    <li>Skilled in staff training</li>
+                    <li>Multilingual in English, French, Kinyarwanda</li>
+            </div>
+
+            <div class="col-sm-6">
+                <h4>PROFESSIONAL SUMMARY</h4>
+                <P>Hard working and effective web developer and web designer.<br>
+                    best coding practice on differents projects like Rwanda Roots Beauty website and my website
+                    resume<br>
+                    improving my skills every day.</P>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>PROFESSIONAL EXPERIENCE</h4>
+        <div class="row">
+            <div class="col-sm-4">
+                <h5>Production operator <br>
+                    Merit Medical Systems Inc.- South Jordan, UT</h5>
+                <p>Backup lead, technician, assembly medical devices and electronic devices (sensor).</p>
+                <li>Monitored process to avoid overloading and keep machinery functioning properly</li>
+                <li>Recognized and reported defective material and equipment</li>
+                <li>Reported production data</li>
+                <li>Organized all project components on worktables according to workflow </li>
+            </div>
+
+            <div class="col-sm-4">
+                <h5>Seller 12/01/2015 - 04/10/2016
+                    E. Leclerc-Moulins, France</h5>
+                <p>Store of clothes, food and drug</p>
+                <li>Delivered an exceptional level of service to each customer by listening to concerns and answering
+                    questions</li>
+            </div>
+
+            <div class="col-sm-4">
+
+                <h5>Server 07/25/2012 - 11/30/2015<br>
+                    E. Leclerc-Moulins, France</h5>
+                <p>Cafeteria -restaurant had mission to satisfy their customers</p>
+                <li>Prepared salads and appetizers to back up kitchen staff</li>
+                <li>Prepared and maintained salad, dessert and drinks bar by restocking them</li>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+
+
+                <h3>EDUCATION</h3>
+                <p>Web design and web development 07/2019 to Current <br>
+                    Utah Community College- Salt Lake City </p>
+                <p>Bachelor’s degree in management and Organization 12/2015<br>
+                    Instutit Technologique de Moulins -France (IUT)</p>
+                <p>Bachelor of Accountancy: Business Management 12/2011<br>
+                    National University of Rwanda</p>
+                <p>High school diploma 12/2006<br>
+                    Group Scloraire Notre Dame de Lourde- Byimana</p>
+            </div>
+            <div class="col-sm-6">
+
+                <h4>PROFESSIONAL DEVELOPMENT</h4>
+                <li>Certification of Training of Trainers, Instructor Program, Merit Medical 07/02/2011 –
+                    07/20/2011</li>
+                <li>Certification of Microsoft Word 2016, Merit Medical </li>
+            </div>
+
+        </div>
+
+    </div>
+    <h3>Professional References</h3>
+
+
+    <script>
+
+
+        function currentTime() {
+            var greeting;
+            var time = new Date().getHours();
+            if (time < 10) {
+                greeting = "Good morning";
+            } else if (time < 20) {
+                greeting = "Good day";
+            } else {
+                greeting = "Good evening";
+            }
+
+
+
+            name = prompt("please enter your name");
+
+            window.alert("hello " + greeting + " " + name + " welcome to my website")
+        }
+
+        currentTime();
+    </script>
+    
+
+    <div id="reference">Professional references </div>
+    <script>
+        function references() {
+            var ref1 = [" Adriana Perry " , " production ", " 80153335321" , " mugabekazi2@gmail.com", " supervisor"];
+            var ref2 = [ " Nathan Yates ", " production", " 80153335321", " mugabekazi2@gmail.com", " supervisor"];
+            var ref3 = [" Elizabeth ", " production ", " 80153335321 ", " mugabekazi2@gmail.com ", " supervisor "];
+            var text = "<div class='references'>";
+                allRefs = [ref1, ref2, ref3];
+            var s = 0;
+            while (allRefs[s]) {
+                text += allRefs[s] + "<br>";
+                s++;
+            }
+            text += "</div>";
+            document.getElementById("reference").innerHTML = text;
+        }
+        references();
+
+    </script>
+    <div onclick="myFunction()">References</button>
+    <div id="myDIV">
+        This is my Section element.
+    </DIV>
+        <p><b>Note:</b>The element will not take up any space when the display property set to"none".</p>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myDIV");
+                if (x.style.display=== "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none" ;
+                }
+                }
+            
+        </script>
+
+</body>
+
+</html>
